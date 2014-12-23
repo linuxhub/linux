@@ -249,10 +249,10 @@ static struct fbtft_device_display displays[] = {
 			}
 		}
 	}, {
-		.name = "otft22",
+		.name = "oview24t",
 		.spi  = &(struct spi_board_info) {
 			.modalias     = "fb_ili9341",
-			.max_speed_hz = 32000000,
+			.max_speed_hz = 64000000,
 			.mode         = SPI_MODE_0,
 			.platform_data = &(struct fbtft_platform_data) {
 				.display = {
@@ -269,10 +269,10 @@ static struct fbtft_device_display displays[] = {
 			}
 		}
 	}, {
-		.name = "otft35",
+		.name = "oview32t",
 		.spi  = &(struct spi_board_info) {
-			.modalias     = "fb_ili9486_reg8",
-			.max_speed_hz = 32000000,
+			.modalias     = "fb_ili9341",
+			.max_speed_hz = 64000000,
 			.mode         = SPI_MODE_0,
 			.platform_data = &(struct fbtft_platform_data) {
 				.display = {
