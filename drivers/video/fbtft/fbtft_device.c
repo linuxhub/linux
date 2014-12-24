@@ -289,26 +289,6 @@ static struct fbtft_device_display displays[] = {
 			}
 		}
 	}, {
-		.name = "otft35_s9",
-		.spi  = &(struct spi_board_info) {
-			.modalias     = "fb_ili9486_3",
-			.max_speed_hz = 32000000,
-			.mode         = SPI_MODE_0,
-			.platform_data = &(struct fbtft_platform_data) {
-				.display = {
-					.buswidth  = 9,
-					.backlight = 1,
-				},
-				.bgr    = true,
-				.gpios = (const struct fbtft_gpio []) {
-					{ "reset" , 24 },
-					// { "dc"    , 23 },
-					{ "led"   , 25 },
-					{},
-				},
-			}
-		}
-	}, {
 		.name = "adafruit28",
 		.spi = &(struct spi_board_info) {
 			.modalias = "fb_ili9341",
